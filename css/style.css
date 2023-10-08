@@ -1,7 +1,7 @@
 /* --------------------------header */
 header {
     padding: 30px 0;
-    background: url(/img/mainvisual.jpg) no-repeat center;
+    background: url(../img/mainvisual.jpg) no-repeat center;
     width: 100%;
     height: 100vh;
 
@@ -84,60 +84,60 @@ section .title {
 
 #works #grid-container .grid-a {
     grid-area: a;
-    background-image: url(/img/nail01.jpg);
+    background-image: url(../img/nail01.jpg);
 }
 
 #works #grid-container .grid-b {
     grid-area: b;
-    background-image: url(/img/nail02.jpg);
+    background-image: url(../img/nail02.jpg);
 }
 
 #works #grid-container .grid-c {
     grid-area: c;
-    background-image: url(/img/nail03.jpg);
+    background-image: url(../img/nail03.jpg);
 }
 
 #works #grid-container .grid-d {
     grid-area: d;
-    background-image: url(/img/nail04.jpg);
+    background-image: url(../img/nail04.jpg);
 }
 
 #works #grid-container .grid-e {
     grid-area: e;
-    background-image: url(/img/nail05.jpg);
+    background-image: url(../img/nail05.jpg);
 }
 
 #works #grid-container .grid-f {
     grid-area: f;
-    background-image: url(/img/nail06.jpg);
+    background-image: url(../img/nail06.jpg);
 }
 
 #works #grid-container .grid-g {
     grid-area: g;
-    background-image: url(/img/nail07.jpg);
+    background-image: url(../img/nail07.jpg);
 }
 
 #works #grid-container .grid-h {
     grid-area: h;
-    background-image: url(/img/nail08.jpg);
+    background-image: url(../img/nail08.jpg);
 }
 
 #works #grid-container .grid-i {
     grid-area: i;
-    background-image: url(/img/nail09.jpg);
+    background-image: url(../img/nail09.jpg);
 }
 
 #works #grid-container .grid-j {
     grid-area: j;
-    background-image: url(/img/nail10.jpg);
+    background-image: url(../img/nail10.jpg);
 }
 
 #works #grid-container .grid-k {
     grid-area: k;
-    background-image: url(/img/nail11.jpg);
+    background-image: url(../img/nail11.jpg);
 }
 
 #works #grid-container .grid-l {
     grid-area: l;
-    background-image: url(/img/nail12.jpg);
+    background-image: url(../img/nail12.jpg);
 }
