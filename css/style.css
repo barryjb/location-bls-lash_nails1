@@ -1,3 +1,12 @@
+body {
+    background-color: #f5edec;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: #602d27;
+    padding-bottom: 50px;
+}
 /* --------------------------header */
 header {
     padding: 30px 0;
@@ -11,6 +20,7 @@ header h1 {
     font-size: 6rem;
     color: #f5edec;
     text-align: center;
+
 }
 
 header .navbar {
@@ -19,19 +29,29 @@ header .navbar {
 
 header .navbar ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+header .navbar li {
+    margin-left: 40px;
 }
 
 header .navbar a {
     font-size: 2rem;
     font-weight: bold;
-    color: #602d27;
+    color: #f5edec;
+}
+
+header .navbar a:hover {
+    color:#cc879a
 }
 
 /* ----------------------------------main */
 section {
     padding: 80px 0;
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 section .title {
@@ -43,101 +63,158 @@ section .title {
 }
 
 /* --------------------------about */
-#about p {
-    font-size: 1.5rem;
-    color: #602d27;
-}
+
+
+
 
 /* -----------------------------menu */
 #menu-container {
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
+
 }
 
-.menu-detail {
+#menu .menu-detail {
     width: 50%;
+    padding: 40px 45px;
+    font-size: 1.5rem;   
 }
 
-.menu-detail h2 {
-    border-bottom: solid 1px #602d27;
-    
-    
+#menu .menu-detail h2 {
+    font-size: 2.5rem;
+    display: inline-block;
+    border-bottom: solid 3px #cc879a;
+    margin-bottom: 50px;    
+}
+
+#menu .menu-detail dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu .menu-detail dt {
+    width: 80%;
+    text-align: left;
+    border-bottom: dotted 1px #000;
+    margin-bottom: 25px;
+
+}
+
+#menu .menu-detail dd {
+    width: 20%;
+    text-align: right;
+    margin: 0;
 }
 
 /* ---------------------------works */
-#works #grid-container {
+#about #grid-container {
     display: grid;
     max-width: 100%;
     height: 1000px;
     grid-template-columns: 20% 15% 30% 15% 20%;
     grid-template-rows: 25% 20% 20% 20% 20%;
     grid-template-areas: "a a b b c" "d e e f f" "d e e g g" "h h i j j" "k l l j j";
-    padding: 0 10%;
 }
 
-#works #grid-container div {
+#about #grid-container div {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-#works #grid-container .grid-a {
+#about #grid-container .grid-a {
     grid-area: a;
     background-image: url(../img/nail01.jpg);
 }
 
-#works #grid-container .grid-b {
+#about #grid-container .grid-b {
     grid-area: b;
     background-image: url(../img/nail02.jpg);
 }
 
-#works #grid-container .grid-c {
+#about #grid-container .grid-c {
     grid-area: c;
     background-image: url(../img/nail03.jpg);
 }
 
-#works #grid-container .grid-d {
+#about #grid-container .grid-d {
     grid-area: d;
     background-image: url(../img/nail04.jpg);
 }
 
-#works #grid-container .grid-e {
+#about #grid-container .grid-e {
     grid-area: e;
     background-image: url(../img/nail05.jpg);
 }
 
-#works #grid-container .grid-f {
+#about #grid-container .grid-f {
     grid-area: f;
     background-image: url(../img/nail06.jpg);
 }
 
-#works #grid-container .grid-g {
+#about #grid-container .grid-g {
     grid-area: g;
     background-image: url(../img/nail07.jpg);
 }
 
-#works #grid-container .grid-h {
+#about #grid-container .grid-h {
     grid-area: h;
     background-image: url(../img/nail08.jpg);
 }
 
-#works #grid-container .grid-i {
+#about #grid-container .grid-i {
     grid-area: i;
     background-image: url(../img/nail09.jpg);
 }
 
-#works #grid-container .grid-j {
+#about #grid-container .grid-j {
     grid-area: j;
     background-image: url(../img/nail10.jpg);
 }
 
-#works #grid-container .grid-k {
+#about #grid-container .grid-k {
     grid-area: k;
     background-image: url(../img/nail11.jpg);
 }
 
-#works #grid-container .grid-l {
+#about #grid-container .grid-l {
     grid-area: l;
     background-image: url(../img/nail12.jpg);
 }
+
+/* -------------------------------------contact */
+#contact #info-detail {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#contact #map {
+    padding-right: 20px;
+}
+
+#contact .info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+#contact li {
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+#contact a {
+    color: #602d27;
+}
+
+#contact img{
+    width: 20px;
+}
+
+#contact #sns-info {
+    flex-direction: row;
+    justify-content: ;
+}
+
+
