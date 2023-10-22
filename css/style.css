@@ -7,6 +7,35 @@ body {
     color: #602d27;
     padding-bottom: 50px;
 }
+
+.btn {
+    font-size: 2rem;
+    
+}
+
+.btn a {
+    color: #602d27;
+    border: 1px solid;
+    padding: 10px 40px;
+}
+
+.btn a:hover {
+    color: #f5edec;
+    background-color: #cc879a;
+}
+
+.pagetop {
+    position: fixed;
+    z-index: 10;
+    right: 45px;
+    bottom: 10px;
+}
+
+.pagetop .arrow {
+    font-size: 6rem;
+    color: #602d27;
+}
+
 /* --------------------------header */
 header {
     padding: 30px 0;
@@ -16,10 +45,15 @@ header {
 
 }
 
+header .sp {
+    display: none;
+}
+
 header h1 {
     font-size: 6rem;
     color: #f5edec;
     text-align: center;
+    font-family: 'Playpen Sans', cursive;
 
 }
 
@@ -60,6 +94,7 @@ section .title {
     font-size: 4rem;
     font-weight: bold;
     padding-bottom: 30px;
+    font-family: 'Playpen Sans', cursive;
 }
 
 /* --------------------------about */
@@ -83,7 +118,8 @@ section .title {
     font-size: 2.5rem;
     display: inline-block;
     border-bottom: solid 3px #cc879a;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
+    font-family: 'Playpen Sans', cursive;    
 }
 
 #menu .menu-detail dl {
@@ -192,6 +228,10 @@ section .title {
     padding-right: 20px;
 }
 
+#contact #info-container {
+    margin-top: auto;
+}
+
 #contact .info {
     display: flex;
     flex-direction: column;
@@ -199,12 +239,18 @@ section .title {
     
 }
 
-#contact li {
+#contact .info li {
     padding-bottom: 20px;
     font-size: 2rem;
 }
 
-#contact a {
+#contact .info li:nth-child(1) {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#contact .info a {
     color: #602d27;
 }
 
@@ -214,7 +260,54 @@ section .title {
 
 #contact #sns-info {
     flex-direction: row;
-    justify-content: ;
+    align-items: center;    
+}
+
+#contact #sns-info li:nth-child(2){
+    padding-left: 20px;
+}
+
+#contact #sns-info .icons{
+    font-size: 3rem;
+}
+
+/* --------------------------------footer */
+footer p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 40px 0;
 }
 
 
+
+/* ----------------------------------------
+---------------phone----------------------- */
+@media screen and (max-width: 414px) {
+    .sp {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* contact */
+    #contact #map {
+    
+    } 
+
+    #contact #info-detail {
+        flex-direction: column;
+    }
+    
+}
