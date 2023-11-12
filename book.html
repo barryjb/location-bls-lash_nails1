@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lash Nails Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e248b7b4e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/book.css">   
+</head>
+<body>
+    <header>
+        <div id="nav-toggle" class="sp">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>    
+            </div>       
+        </div>
+         <div id="box">
+            <h1>
+              <a href="index.html">Lash<br>&<br>Nails</a>
+          </h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="book">
+            <h1 class="title">Booking</h1>
+            <div id="bookingform">
+                <form method="post" action="">
+                    <table>
+                      <tr>
+                        <th><label for="your-name" id="your-name-c">name</label></th>
+                        <td><input type="text" name="name" id="your-name"></td>
+                      </tr>
+                      <tr>
+                        <th><label for="phone-num" id="your-name-c">phone number</label></th>
+                        <td><input type="tel" name="phone-num" id="phone-num"></td>
+                      </tr>
+                      <tr>
+                        <th><label for="e-mail" id="your-name-c">e-mail</label></th>
+                        <td><input type="email" name="e-mail" id="e-mail"></td>
+                      </tr>
+                      <tr>
+                        <th>Request day</th>
+                        <td>
+                          <select name="month" id="month">
+                            <option value="">---</option>
+                            <option value="January">January</option>
+                            <option value="Feburary">Feburary</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="Octorber">Octorber</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                          </select>
+              
+                          <select name="day" id="day">
+                            <option value="">---</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                          </select>
+              
+                          <select name="time" id="time">
+                            <option value="">---</option>
+                            <option value="10">10am</option>
+                            <option value="11">11am</option>
+                            <option value="12">12pm</option>
+                            <option value="13">13pm</option>
+                            <option value="14">14pm</option>
+                            <option value="15">15pm</option>
+                            <option value="16">16pm</option>
+                            <option value="17">17pm</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Your menu</th>
+                        <td>
+                          <select name="menu" id="your-menu">
+                            <option value="">---</option>
+                            <option value="10">GEL NAILS</option>
+                            <option value="11">ACRYLIC NAILS</option>
+                            <option value="12">MANICURES</option>
+                            <option value="13">REMOVAL</option>
+                          </select>
+                        </td> 
+                      </tr>
+                      <tr>
+                        <th><label for="message" >message</label></th>
+                        <td><textarea placeholder="message" id="message"></textarea></td>
+                      </tr>
+                    </table>
+                  </form>
+                    <p id="submit-btn">
+                      <input type="submit" value="submit" id="btn-submit">
+                    </p>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <p>lutwyche.bestlocal.services/lash&nails</p>
+    </footer>
+
+    <!-- <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        // ------------------------------hamburger menu
+        $(function(){
+            $('#nav-toggle').click(function () {
+            $('body').toggleClass('open');
+            });
+        });
+
+        $('.navbar a').on('click',function() {
+         $('body').removeClass('open');
+     } );
+    </script> -->
+</body>
+</html>
